@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+--><html><head>
+    <title>Methods - Colorful Evolution</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    </head><body>
+
+<!-- Header -->
+<header id="header"><div class="inner">
+        <a href="index.html" class="logo">Colorful Evolution</a>
+        <nav id="nav">
+            <a href="about.html">About</a>
+            <a href="methods.html">Methods</a>
+            <a href="data.html">Data</a>
+            <a href="results.html">Results</a>
+            <a href="credits.html">Credits</a>
+        </nav>
+</header><a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+<section id="main"><div class="inner">
+        <header class="major special"><h1>Methods</h1>
+        </header><a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+        <p>The first step in my process was narrowing down the scope of my project. Originally, I wanted to analyze the color differences between the top grossing games throughout time, however the scope of that for this project was too large. Additionally, differences in genres and styles would result in inconsistent results, which is why I decided to just look at the mainline Pokémon games. Once I narrowed down my scope to the 9 main Pokémon games, I began to collect the data.</p>
+        <p>I started by searching YouTube to find video playthroughs for the full games. Once I found the videos, I downloaded them using 4k Video Downloader + as mp4 files. I also downloaded the videos at 720p resolution so that the files weren't too big.</p>
+        <p>Once all of the videos were downloaded, I broke each mp4 file into individual images using python code. (More details about my code are in my GitHub repository linked on the data page) When you run the program, it asks the user for a file name, and then creates a folder with that file name where all of the images are stored.</p>
+        <img src="images/code1.png" alt="snapshot of python code for breaking up the videos into images" width="600" height="400"/>
+        <p>The program adds an image to the folder for every 10 seconds of video. I decided to go this route because the playthroughs I analyzed are long and at 30fps, this was too many photos. For example, one of my first tests had over 1.5 million images, which was obviously a bit much for this project. I also chose to do every 10 seconds since 30 frames every second would be redundant and wouldn’t really change the data that much. Each image also has a name with the scheme “Folder Name_image#” to make them easy to understand.</p>
+        <p>After all of the folders were downloaded, I put them all together in a folder, and they were ready to be analyzed.</p>
+        <img src="images/folder.png" alt="folder of all of the data" width="600" height="400"/>
+        <p>The first way I decided to do this is by using IMJ tool. To find the patterns in the evolution of color in the games over time, I used the plot feature to plot each image comparing the hue on the x-axis, and the saturation on the y-axis.</p>
+        <img src="images/imj_tool.png" alt="IMJ tool interface" width="600" height="650"/>
+    </div>
+</section><div class="copyright">
+    Powered by: <a href="https://templated.co/">Templated</a>.
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js">
+</script><script src="assets/js/skel.min.js">
+</script><script src="assets/js/util.js">
+</script><script src="assets/js/main.js">
+</script><script src="assets/js/cursor.js"></script>  
+</script></body></html>

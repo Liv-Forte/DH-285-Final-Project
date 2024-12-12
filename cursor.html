@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Cursor Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            background-color: #111;
+        }
+        .cursor {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            pointer-events: none;
+            background-color: red;
+            z-index: 1000;
+        }
+        .cursor-trail {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const cursor = document.createElement('div');
+        cursor.classList.add('cursor');
+        document.body.appendChild(cursor);
+
+        const trail = [];
+        const trailLength = 10;
+
+        function createTrail(x, y) {
+            const trailElement = document.createElement('div');
+            trailElement.classList.add('cursor-trail');
+            document.body.appendChild(trailElement);
+            trail.push(trailElement);
+
+            trailElement.style.left = `${x - 10}px`;
+            trailElement.style.top = `${y - 10}px`;
+
+            const hue = Math.random() * 360;
+            trailElement.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
+
+            if (trail.length > trailLength) {
+                const oldElement = trail.shift();
+                oldElement.remove();
+            }
+        }
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+
+            cursor.style.left = `${x - 10}px`;
+            cursor.style.top = `${y - 10}px`;
+
+            createTrail(x, y);
+        });
+    </script>
+</body>
+</html>
