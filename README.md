@@ -4,7 +4,9 @@ This is my GitHub reposotory containing all of my code for my DH 285 final proje
 Contents: 
 
 mp4_to_images.py - my python code to break up an mp4 file into images
+
 number_of_colors.py - my test python code to find the amount of unique colors in a bunch of images
+
 No_excel.py - *I need to change the name* this program started as a test for my number of colors program but evolved into my program to create color palettes by folder
 
 the rest of the contents are currently for my website, which can be viewed at the link:
