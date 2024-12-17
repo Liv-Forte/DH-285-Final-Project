@@ -28,25 +28,24 @@
 </header><a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 <section id="main"><div class="inner">
         <header class="major special"><h1>Results</h1>
-        </header><a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-        <p>After putting my image data (a grand total of 51,913 images) into IMJ tool to plot the images based on hue (x-axis) and saturation (y-axis), I found that earlier games had more defined clusters of colors, and newer games had more colors. In other words, earlier games had more distinct color groups, and with each game there were mostly more and more colors across the spectrum. For example, in Pokémon Blue, there was only one color group since the technology only allowed for one color. While I expected there to be more colors as technology progressed, it is interesting to see how the use of color and color groups in games has shifted over time.</p>
-        <img src="images/Blue_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <p><br>After putting my image data (a grand total of 51,913 images) into IMJ tool to plot the images based on hue (x-axis) and saturation (y-axis), I found that earlier games had more defined clusters of colors, and newer games had more colors. In other words, earlier games had more distinct color groups, and with each game there were mostly more and more colors across the spectrum. For example, in Pokémon Blue, there was only one color group since the technology only allowed for one color. While I expected there to be more colors as technology progressed, it is interesting to see how the use of color and color groups in games has shifted over time.</p>
+        <img src="images/Blue_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Blue - 3259 Images - Game Boy</p>
-        <img src="images/Silver_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <img src="images/Silver_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Silver - 4975 Images - Game Boy Color</p>
-        <img src="images/Ruby_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <img src="images/Ruby_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Ruby - 5101 Images - Game Boy Advance</p>
-        <img src="images/Diamond_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <img src="images/Diamond_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Diamond - 8022 Images (from 2 videos: part 1 and 2) - Nintendo DS</p>
-        <img src="images/Black_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <img src="images/Black_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Black - 3147 Images - Nintendo DS</p>
-        <img src="images/X_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <img src="images/X_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon X - 3650 Images - Nintendo 3DS</p>
-        <img src="images/Sun_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <img src="images/Sun_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Sun - 8656 Images - Nintendo 3DS</p>
-        <img src="images/Sword_hue+saturation.png" alt="folder of all of the data" width="600" height="400"/>
+        <img src="images/Sword_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Sword - 6543 Images - Nintendo Switch</p>
-        <img src="images/Violet_hue+saturation.png" alt="folder of all of the data" width="auto" height="auto"/>
+        <img src="images/Violet_hue+saturation.png" alt="folder of all of the data" style="max-width: 100%; height: auto;"/>
         <p>Pokémon Violet - 8560 Images - Nintendo Switch</p>
         <p>Based on these initial findings, I decided that I want to expand upon color groupings using python code, which is something I have not done yet but will do in the future. I also did a lot of other analysis of the data using python code that is currently inconclusive and needs to be expanded upon later, but I have some current interactive visualizations. The first way I attempted to analyze the code was finding the amount of unique colors for each game. The goal for this program was to find the number of unique colors, and take the number for each game and put them in an interactive graph. While the code works, the euclidean color distance formula might need to be tweaked since I am currently unsure what should or should not be considered a different color. Additionally, the code worked for a small test dataset, but was way too slow to be feasible for thousands of images. For example, I estimated that it would take like 72 hours if it continued at a similar rate to complete the analysis for one whole game. In the future, I plan to expand on this code to be faster and more efficient. I also created another python program that creates color palettes for each game with the top 50 colors. My initial test was fairly successful, and provided me with an interactive graph. Though the results are shown here, they are fairly inconclusive, and need to be tweaked to fit the scope of this project better. For example, I don’t think that showing all of the color palettes at the same time really does anything for the project, and I also might need to tweak the amount of colors in the palette to be smaller, such as the top 10 or 20 colors so it doesn't seem so messy. Additionally, I think I want to focus more on color groups in the future as well.</p>
         <iframe src="color_palettes_by_folder.html" width="100%" height="500px"></iframe>
